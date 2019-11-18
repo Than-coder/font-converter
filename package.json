@@ -1,0 +1,25 @@
+{
+  "name": "font-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build":"electron-builder --linux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-builder": "^21.2.0"
+  },
+  "build":{
+    "linux":{
+      "target":[
+        "AppImage"
+      ]
+    }
+  }
+}

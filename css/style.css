@@ -1,0 +1,83 @@
+/* @font-face {
+    font-family: 'oswald';
+    src: url('/font/oswald.regular.ttf');
+} */
+@font-face {
+  font-family: 'zawgyi';
+  src: url('../font-convert/ZawgyiOne_exp.ttf');
+}
+
+@font-face {
+  font-family: 'unicode';
+  src: url('../font-convert/Padauk-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 222, 222);
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+
+/* content */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+}
+
+
+.content .unicode #unicode,
+.content .zawgyi #zawgyi {
+  width: 100%;
+  border: 2px solid rgb(170, 170, 170);
+  height: 250px;
+  padding: .5rem;
+  resize: none;
+}
+/* font family */
+#unicode {
+  font-family: 'unicode';
+  font-size: 1.11rem;
+}
+#zawgyi {
+  font-family: 'zawgyi';
+  font-size: 1.2rem;
+}
+
+/* button */
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  border: 1px solid #333;
+  outline: none;
+  padding: .3rem .6rem;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(163, 162, 162);
+}
+
+
+.clear {
+  background: rgb(236, 7, 57);
+}
+.clear:hover {
+  background: rgb(207, 14, 56);
+}
